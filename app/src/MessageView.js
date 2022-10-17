@@ -50,8 +50,6 @@ const MessageDisplay = (props) => (
 export const MessageView = (props) => {
     const [messages, setMessages] = useState([]);
 
-    console.log('Retest');
-
     useEffect(() => {
         axios
             .get(constant.URL_DB + 'messageById', {
