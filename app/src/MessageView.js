@@ -31,21 +31,7 @@ const handleSubmit = (e) => {
         });
 };
 
-const MessageDisplay = (props) => (
-    <div class="message">
-        <div class="message__outer">
-            <div class="message__avatar"></div>
-            <div class="message__inner">
-                <div class="message__bubble"></div>
-                <div class="message__actions">
-                    <p> {props.text}</p>
-                </div>
-                <div class="message__spacer"></div>
-            </div>
-            <div class="message__status"></div>
-        </div>
-    </div>
-);
+const MessageDisplay = (props) => <div class="message">{props.text}</div>;
 
 export const MessageView = (props) => {
     const [messages, setMessages] = useState([]);

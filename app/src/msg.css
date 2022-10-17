@@ -113,6 +113,17 @@
 
 .Chat {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.message {
+    background-color: aquamarine;
+    border-radius: 30px;
+    flex-shrink: 0;
+    margin: 5px;
+    padding: 5px;
 }
 
 .SendMessage {
@@ -120,33 +131,4 @@
     align-items: center;
     background-color: transparent;
     border-top: 2px solid #eee;
-}
-
-.message__outer {
-    display: flex;
-}
-
-.message__inner {
-    flex: 1;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.message__actions {
-    width: 67px;
-    padding-right: 5px;
-    flex-shrink: 0;
-}
-
-.message__bubble {
-    max-width: calc(100% - 67px);
-    overflow-wrap: break-word;
-}
-
-.message__spacer {
-    flex: 1;
-}
-
-.clickable {
-    cursor: pointer;
 }
